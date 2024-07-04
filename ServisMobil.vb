@@ -26,28 +26,30 @@ Partial Class Form1
         Me.No = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.NamaLengkap = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.NomorHandphone = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.MerkMobil = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.MasalahMobil = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.MerkMobil = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.MasalahMobil = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'ListView1
         '
+        Me.ListView1.BackColor = System.Drawing.Color.Navy
         Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.No, Me.NamaLengkap, Me.NomorHandphone, Me.MerkMobil, Me.MasalahMobil})
+        Me.ListView1.ForeColor = System.Drawing.SystemColors.MenuHighlight
         Me.ListView1.HideSelection = False
         Me.ListView1.Location = New System.Drawing.Point(24, 568)
         Me.ListView1.Name = "ListView1"
@@ -73,11 +75,23 @@ Partial Class Form1
         Me.NomorHandphone.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.NomorHandphone.Width = 237
         '
+        'MerkMobil
+        '
+        Me.MerkMobil.Text = "MERKMOBIL"
+        Me.MerkMobil.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.MerkMobil.Width = 172
+        '
+        'MasalahMobil
+        '
+        Me.MasalahMobil.Text = "MASALAH MOBIL"
+        Me.MasalahMobil.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.MasalahMobil.Width = 198
+        '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.SystemColors.InfoText
+        Me.Label1.ForeColor = System.Drawing.SystemColors.Window
         Me.Label1.Location = New System.Drawing.Point(67, 37)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(164, 25)
@@ -87,10 +101,10 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.Color.Goldenrod
+        Me.Button1.BackColor = System.Drawing.Color.PapayaWhip
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.SystemColors.Window
-        Me.Button1.Location = New System.Drawing.Point(70, 352)
+        Me.Button1.ForeColor = System.Drawing.SystemColors.InactiveCaptionText
+        Me.Button1.Location = New System.Drawing.Point(70, 355)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(161, 40)
         Me.Button1.TabIndex = 6
@@ -101,7 +115,7 @@ Partial Class Form1
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.SystemColors.InfoText
+        Me.Label2.ForeColor = System.Drawing.SystemColors.Window
         Me.Label2.Location = New System.Drawing.Point(39, 524)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(256, 25)
@@ -128,7 +142,7 @@ Partial Class Form1
         '
         'GroupBox1
         '
-        Me.GroupBox1.BackColor = System.Drawing.SystemColors.Window
+        Me.GroupBox1.BackColor = System.Drawing.Color.Navy
         Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Controls.Add(Me.TextBox4)
         Me.GroupBox1.Controls.Add(Me.ComboBox1)
@@ -143,18 +157,37 @@ Partial Class Form1
         Me.GroupBox1.TabIndex = 15
         Me.GroupBox1.TabStop = False
         '
-        'Label3
+        'Label9
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(32, 38)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(117, 20)
-        Me.Label3.TabIndex = 15
-        Me.Label3.Text = "Nama Lengkap"
+        Me.Label9.AutoSize = True
+        Me.Label9.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.Label9.Location = New System.Drawing.Point(368, 117)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(110, 20)
+        Me.Label9.TabIndex = 27
+        Me.Label9.Text = "Masalah Mobil"
+        '
+        'TextBox4
+        '
+        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox4.Location = New System.Drawing.Point(362, 142)
+        Me.TextBox4.Multiline = True
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(317, 37)
+        Me.TextBox4.TabIndex = 26
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(362, 63)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(317, 28)
+        Me.ComboBox1.TabIndex = 22
         '
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.Label4.Location = New System.Drawing.Point(32, 117)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(144, 20)
@@ -173,55 +206,28 @@ Partial Class Form1
         'Label6
         '
         Me.Label6.AutoSize = True
+        Me.Label6.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.Label6.Location = New System.Drawing.Point(368, 40)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(85, 20)
         Me.Label6.TabIndex = 15
         Me.Label6.Text = "Merk Mobil"
         '
-        'ComboBox1
+        'Label3
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(362, 63)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(317, 28)
-        Me.ComboBox1.TabIndex = 22
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(368, 117)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(110, 20)
-        Me.Label9.TabIndex = 27
-        Me.Label9.Text = "Masalah Mobil"
-        '
-        'TextBox4
-        '
-        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox4.Location = New System.Drawing.Point(362, 142)
-        Me.TextBox4.Multiline = True
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(317, 37)
-        Me.TextBox4.TabIndex = 26
-        '
-        'MerkMobil
-        '
-        Me.MerkMobil.Text = "MERKMOBIL"
-        Me.MerkMobil.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.MerkMobil.Width = 172
-        '
-        'MasalahMobil
-        '
-        Me.MasalahMobil.Text = "MASALAH MOBIL"
-        Me.MasalahMobil.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.MasalahMobil.Width = 198
+        Me.Label3.AutoSize = True
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label3.Location = New System.Drawing.Point(32, 38)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(117, 20)
+        Me.Label3.TabIndex = 15
+        Me.Label3.Text = "Nama Lengkap"
         '
         'Button2
         '
-        Me.Button2.BackColor = System.Drawing.Color.Goldenrod
+        Me.Button2.BackColor = System.Drawing.Color.NavajoWhite
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.SystemColors.Window
+        Me.Button2.ForeColor = System.Drawing.SystemColors.InactiveCaptionText
         Me.Button2.Location = New System.Drawing.Point(44, 831)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(161, 40)
@@ -233,7 +239,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Moccasin
+        Me.BackColor = System.Drawing.Color.Blue
         Me.ClientSize = New System.Drawing.Size(800, 968)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.GroupBox1)
