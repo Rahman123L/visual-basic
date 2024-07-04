@@ -35,11 +35,11 @@ Partial Class Form1
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -164,6 +164,14 @@ Partial Class Form1
         Me.GroupBox1.TabIndex = 20
         Me.GroupBox1.TabStop = False
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(29, 134)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(294, 28)
+        Me.ComboBox1.TabIndex = 21
+        '
         'Label4
         '
         Me.Label4.AutoSize = True
@@ -173,14 +181,6 @@ Partial Class Form1
         Me.Label4.TabIndex = 16
         Me.Label4.Text = "Desnitasi Wisata"
         '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(29, 134)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(294, 28)
-        Me.ComboBox1.TabIndex = 21
-        '
         'GroupBox2
         '
         Me.GroupBox2.BackColor = System.Drawing.Color.White
@@ -188,18 +188,9 @@ Partial Class Form1
         Me.GroupBox2.Controls.Add(Me.Label5)
         Me.GroupBox2.Location = New System.Drawing.Point(420, 82)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(337, 210)
+        Me.GroupBox2.Size = New System.Drawing.Size(337, 242)
         Me.GroupBox2.TabIndex = 21
         Me.GroupBox2.TabStop = False
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(26, 39)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(133, 20)
-        Me.Label5.TabIndex = 22
-        Me.Label5.Text = "Data Pengunjung"
         '
         'Label6
         '
@@ -209,6 +200,15 @@ Partial Class Form1
         Me.Label6.Size = New System.Drawing.Size(101, 20)
         Me.Label6.TabIndex = 23
         Me.Label6.Text = "Aaaaaaaaaa"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(26, 39)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(133, 20)
+        Me.Label5.TabIndex = 22
+        Me.Label5.Text = "Data Pengunjung"
         '
         'Form1
         '
