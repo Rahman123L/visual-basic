@@ -24,16 +24,16 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.ListView1 = New System.Windows.Forms.ListView()
         Me.No = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.JurusanKuliah = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.Selengkapnya = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.JURUSAN = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.KETERANGAN = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -41,7 +41,7 @@ Partial Class Form1
         '
         'ListView1
         '
-        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.No, Me.JurusanKuliah, Me.Selengkapnya})
+        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.No, Me.JURUSAN, Me.KETERANGAN})
         Me.ListView1.HideSelection = False
         Me.ListView1.Location = New System.Drawing.Point(25, 442)
         Me.ListView1.Name = "ListView1"
@@ -52,27 +52,27 @@ Partial Class Form1
         '
         'No
         '
-        Me.No.Text = "NO"
+        Me.No.Text = "NO."
         Me.No.Width = 50
         '
-        'JurusanKuliah
+        'JURUSAN
         '
-        Me.JurusanKuliah.Text = "JURUSAN KULIAH"
-        Me.JurusanKuliah.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.JurusanKuliah.Width = 215
+        Me.JURUSAN.Text = "JURUSAN"
+        Me.JURUSAN.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.JURUSAN.Width = 215
         '
-        'Selengkapnya
+        'KETERANGAN
         '
-        Me.Selengkapnya.Text = "SELENGKAPNYA"
-        Me.Selengkapnya.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.Selengkapnya.Width = 450
+        Me.KETERANGAN.Text = "KETERANGAN"
+        Me.KETERANGAN.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.KETERANGAN.Width = 450
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.InfoText
-        Me.Label1.Location = New System.Drawing.Point(40, 26)
+        Me.Label1.Location = New System.Drawing.Point(237, 33)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(353, 25)
         Me.Label1.TabIndex = 4
@@ -81,10 +81,10 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.Color.Teal
+        Me.Button1.BackColor = System.Drawing.Color.DarkSlateGray
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.SystemColors.Window
-        Me.Button1.Location = New System.Drawing.Point(26, 126)
+        Me.Button1.Location = New System.Drawing.Point(156, 148)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(161, 40)
         Me.Button1.TabIndex = 6
@@ -114,7 +114,7 @@ Partial Class Form1
         'TextBox1
         '
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox1.Location = New System.Drawing.Point(26, 63)
+        Me.TextBox1.Location = New System.Drawing.Point(26, 64)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(291, 37)
@@ -132,6 +132,15 @@ Partial Class Form1
         Me.GroupBox1.TabIndex = 15
         Me.GroupBox1.TabStop = False
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(31, 22)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(113, 20)
+        Me.Label3.TabIndex = 15
+        Me.Label3.Text = "Jurusan Kuliah"
+        '
         'GroupBox2
         '
         Me.GroupBox2.BackColor = System.Drawing.SystemColors.Window
@@ -141,20 +150,12 @@ Partial Class Form1
         Me.GroupBox2.Size = New System.Drawing.Size(346, 215)
         Me.GroupBox2.TabIndex = 16
         Me.GroupBox2.TabStop = False
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(32, 38)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(113, 20)
-        Me.Label3.TabIndex = 15
-        Me.Label3.Text = "Jurusan Kuliah"
+        Me.GroupBox2.Text = "Hasil Inputan"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(33, 38)
+        Me.Label4.Location = New System.Drawing.Point(31, 40)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(101, 20)
         Me.Label4.TabIndex = 0
@@ -164,7 +165,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.PowderBlue
+        Me.BackColor = System.Drawing.Color.CadetBlue
         Me.ClientSize = New System.Drawing.Size(800, 816)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
@@ -184,8 +185,8 @@ Partial Class Form1
     End Sub
     Friend WithEvents ListView1 As ListView
     Friend WithEvents No As ColumnHeader
-    Friend WithEvents JurusanKuliah As ColumnHeader
-    Friend WithEvents Selengkapnya As ColumnHeader
+    Friend WithEvents JURUSAN As ColumnHeader
+    Friend WithEvents KETERANGAN As ColumnHeader
     Friend WithEvents Label1 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Label2 As Label
